@@ -13,6 +13,7 @@ function addTask(){
         li.appendChild(span);
     }
     inputBox.value="";
+    saveData();
 }
 
 listContainer.addEventListener("click",function (e) {
@@ -26,5 +27,9 @@ listContainer.addEventListener("click",function (e) {
 },false);
 
 function saveData(){
-    localStorage.setItem("data", listContainer.innerHTML);
+    localStorage.setItem("data", listContainer.innerHTML); //this will store the list data in local storage
 }
+function showTasks(){
+    listContainer.innerHTML = localStorage.getItem("data");// this will store all the list data in the name of data
+}
+showTasks();
