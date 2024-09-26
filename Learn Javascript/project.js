@@ -11,8 +11,13 @@ const prompt = require('prompt-sync')();
 
 //arrow function
 const deposit=()=>{
-    const depositAmount = prompt("Entera deposit amount: ")
-
+    while(true) {
+    const depositAmount = prompt("Entera deposit amount: ");
+    const numberDepositAmount = parseFloat(depositAmount);
+    if(isNaN(numberDepositAmount)|| numberDepositAmount<=0){
+        console.log("Invalid deposit amount, try again");
+    }
+} 
 };
 
 deposit();
