@@ -5,3 +5,12 @@
 //5. check if the user won 
 //6. give the user their winnings
 //7. play again
+
+const prompt = require('prompt-sync')();
+
+
+//arrow function
+const deposit=()=>{
+
+}
+// const x = deposit()
