@@ -11,6 +11,9 @@ const prompt = require('prompt-sync')();
 
 //arrow function
 const deposit=()=>{
+    const depositAmount = prompt("Entera deposit amount: ")
 
-}
+};
+
+deposit();
 // const x = deposit()
