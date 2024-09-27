@@ -38,8 +38,21 @@ while(true) {
     }
 } 
 }
-const depositAmount =deposit();
-// console.log(depositAmount);
+//3
+const getBet=(balance)=>{
+    while(true) {
+        const  bet = prompt("Enter the total bet: ");
+        const NumberOfBet = parseFloat(bet);
+        if(isNaN(NumberOfBet)|| NumberOfBet<=0||NumberOfBet>3){
+            console.log("Invalid bet, try again");
+        }else{
+            return NumberOfBet;
+    
+        }
+    }
+}
+let balance =deposit();
+ 
 const NumberOfLines=getNumberOfLines();
-// console.log(NumberOfLines);
-// const x = deposit()
+const bet=getBet(balance);
+ 
